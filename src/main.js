@@ -49,7 +49,7 @@ const cardNumber = document.querySelector('#card-number')
 const  cardNumberPattern = {
     mask: [{
         mask: "0000 0000 0000 0000",
-        regex: /4\d{0,15}/,
+        regex: /^4[0-9]{12}(?:[0-9]{3})?$/,
         cardType: 'visa'
     },
     {
